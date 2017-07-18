@@ -35,8 +35,8 @@ def get_using_cookie(url):
         print(k, v)
 
 if __name__ == '__main__':
-    # simple_get('http://httpbin.org/get')
+    simple_get('http://httpbin.org/get')
     # get_with_header('http://httpbin.org/get')
     # get_with_parameters('http://httpbin.org/get')
     # get_json_data('http://apis.juhe.cn/mobile/get?phone=13429667914&key=05ff96fc7ca7ee1ff48ee772bddd0320')
-    cookies = get_using_cookie('http://www.baidu.com')
+    # cookies = get_using_cookie('http://www.baidu.com')

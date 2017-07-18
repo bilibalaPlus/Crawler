@@ -29,4 +29,5 @@ if __name__ == '__main__':
     TEXT = R.text.encode('iso-8859-1').decode('gbk')
     S = BeautifulSoup(TEXT, BSLIB)
     for item in S.select('div#newAlexa > table > tbody > tr > td > a'):
-        handle_zip_code(item.text, BASE_URL + item.get('href'))
+        print(item.text)
+        #handle_zip_code(item.text, BASE_URL + item.get('href'))
