@@ -2,9 +2,9 @@ import os
 from multiprocessing import Process
 from multiprocessing import Queue
 
-def run_proc(q):
-    while not q.empty():
-        v = q.get(True)
+def run_proc(w):
+    while not w.empty():
+        v = w.get(True)
         print('Run child process %s (%s)...' % (v, os.getpid()))
 
 if __name__ == '__main__':
