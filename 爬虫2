@@ -15,5 +15,11 @@ grequests
 3.怎么爬动态网页
 
 问题：
-1.不能import上一级目录下的module？
-2.chrome driver是什么？
+1.markupbase安装?
+2.def find_element_by_css_selector(item, selector):
+    try:
+        return item.find_element_by_css_selector(selector)
+    except:
+        return None
+3.百度图片搜索爬取
+4.用webdriver获取不到元素
