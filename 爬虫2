@@ -21,5 +21,17 @@ grequests
         return item.find_element_by_css_selector(selector)
     except:
         return None
-3.百度图片搜索爬取,取不到最后两级标签
+3.百度图片搜索爬取,取不到最后两级标签:内容是动态加载出来的
 4.用webdriver获取不到text
+
+
+线下课程
+1.scrapy 框架
+（css_selector 或 xpath?都可以定位元素）
+框架中包含不同的模块去处理不同的任务
+——request请求数据,spider解析，pipeline数据的后续处理，setting配置文件
+
+request可以发起带参数的请求，比如百度搜索
+request get可以加超时
+可以添加代理，proxies
+模拟登陆

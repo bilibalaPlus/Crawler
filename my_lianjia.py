@@ -35,8 +35,10 @@ def parse(driver,url):
     elements = find_elements_by_css_selector(driver,'div.bigImgList > div.item')
     houses=[]
     for element in elements:
-        title = element.find_element_by_css_selector('a.title').text
-        price = element.find_element_by_css_selector('div.price > span').text
+        titles = element.find_element_by_css_selector('a.title')
+        prices = element.find_element_by_css_selector('div.price > span')
+        title = titles.text
+        price = prices.text
         houses.append([title,price])
 
     return houses
